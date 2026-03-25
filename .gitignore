@@ -1,0 +1,29 @@
+/target/
+
+# ===== REPORTS =====
+reports/
+test-output/
+extent-reports/
+ExtentReports/
+*.html
+
+# ===== SCREENSHOTS =====
+screenshots/
+*.png
+*.jpg
+*.jpeg
+
+# ===== MAVEN =====
+target/
+
+# ===== IDE =====
+.idea/
+.eclipse/
+*.iml
+.settings/
+.classpath
+.project
+
+# ===== LOGS =====
+logs/
+*.log

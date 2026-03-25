@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!-- Smoke Suite - Run only critical P1 tests -->
+<suite name="Smoke-Suite" verbose="1" parallel="false">
+
+    <parameter name="browser" value="chrome"/>
+
+    <listeners>
+        <listener class-name="Listeners.ExtentReportListener"/>
+    </listeners>
+
+    <test name="Smoke Tests">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.LoginTest">
+                <methods>
+                    <include name="testValidLogin"/>
+                    <include name="testLogout"/>
+                </methods>
+            </class>
+            <class name="tests.CheckoutTest">
+                <methods>
+                    <include name="testCompleteCheckout"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
