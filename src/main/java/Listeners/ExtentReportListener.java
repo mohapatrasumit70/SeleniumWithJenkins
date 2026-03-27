@@ -28,7 +28,8 @@ public class ExtentReportListener implements ITestListener {
 
     public static void initReport() {
         String timestamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd_HH-mm-ss"));
-        String reportPath = ConfigReader.getReportPath() + "TestReport_" + timestamp + ".html";
+//        String reportPath = ConfigReader.getReportPath() + "TestReport_" + timestamp + ".html";
+        String reportPath = ConfigReader.getReportPath() + "TestReport" + ".html";
 
         ExtentSparkReporter sparkReporter = new ExtentSparkReporter(reportPath);
         sparkReporter.config().setTheme(Theme.DARK);

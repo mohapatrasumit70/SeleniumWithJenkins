@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="10" total="15" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-28T12:17:53 IST" name="Smoke-Suite" finished-at="2026-03-28T12:18:28 IST" duration-ms="34410">
+    <groups>
+    </groups>
+    <test started-at="2026-03-28T12:17:53 IST" name="Smoke Tests" finished-at="2026-03-28T12:18:28 IST" duration-ms="34410">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:tests.LoginTest@677dbd89]" started-at="2026-03-28T12:17:53 IST" name="beforeSuite" finished-at="2026-03-28T12:17:53 IST" duration-ms="511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@677dbd89]" started-at="2026-03-28T12:17:54 IST" name="setUp" finished-at="2026-03-28T12:18:02 IST" duration-ms="8329" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidLogin()[pri:1, instance:tests.LoginTest@677dbd89]" started-at="2026-03-28T12:18:02 IST" name="testValidLogin" description="Verify successful login with valid credentials" finished-at="2026-03-28T12:18:04 IST" duration-ms="1614" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@677dbd89]" started-at="2026-03-28T12:18:04 IST" name="tearDown" finished-at="2026-03-28T12:18:04 IST" duration-ms="248" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testValidLogin status=SUCCESS method=LoginTest.testValidLogin()[pri:1, instance:tests.LoginTest@677dbd89] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@677dbd89]" started-at="2026-03-28T12:18:04 IST" name="setUp" finished-at="2026-03-28T12:18:07 IST" duration-ms="3063" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogout()[pri:7, instance:tests.LoginTest@677dbd89]" started-at="2026-03-28T12:18:07 IST" name="testLogout" description="Verify logout functionality" finished-at="2026-03-28T12:18:09 IST" duration-ms="1691" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogout -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@677dbd89]" started-at="2026-03-28T12:18:09 IST" name="tearDown" finished-at="2026-03-28T12:18:09 IST" duration-ms="199" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogout status=SUCCESS method=LoginTest.testLogout()[pri:7, instance:tests.LoginTest@677dbd89] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:tests.LoginTest@677dbd89]" started-at="2026-03-28T12:18:28 IST" name="afterSuite" finished-at="2026-03-28T12:18:29 IST" duration-ms="983" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.CheckoutTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CheckoutTest@263f04ca]" started-at="2026-03-28T12:18:09 IST" name="setUp" finished-at="2026-03-28T12:18:13 IST" duration-ms="3663" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="loginAndAddProductsToCart()[pri:0, instance:tests.CheckoutTest@263f04ca]" started-at="2026-03-28T12:18:13 IST" name="loginAndAddProductsToCart" finished-at="2026-03-28T12:18:14 IST" duration-ms="1207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndAddProductsToCart -->
+        <test-method signature="testCompleteCheckout(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:tests.CheckoutTest@263f04ca]" started-at="2026-03-28T12:18:14 IST" name="testCompleteCheckout" description="Verify complete checkout flow" data-provider="checkoutData" finished-at="2026-03-28T12:18:16 IST" duration-ms="1563" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[John]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Doe]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCompleteCheckout -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.CheckoutTest@263f04ca]" started-at="2026-03-28T12:18:16 IST" name="tearDown" finished-at="2026-03-28T12:18:16 IST" duration-ms="187" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCompleteCheckout status=SUCCESS method=CheckoutTest.testCompleteCheckout(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:tests.CheckoutTest@263f04ca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CheckoutTest@263f04ca]" started-at="2026-03-28T12:18:16 IST" name="setUp" finished-at="2026-03-28T12:18:19 IST" duration-ms="2912" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="loginAndAddProductsToCart()[pri:0, instance:tests.CheckoutTest@263f04ca]" started-at="2026-03-28T12:18:19 IST" name="loginAndAddProductsToCart" finished-at="2026-03-28T12:18:20 IST" duration-ms="1150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndAddProductsToCart -->
+        <test-method signature="testCompleteCheckout(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:tests.CheckoutTest@263f04ca]" started-at="2026-03-28T12:18:20 IST" name="testCompleteCheckout" description="Verify complete checkout flow" data-provider="checkoutData" finished-at="2026-03-28T12:18:21 IST" duration-ms="1542" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jane]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Smith]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[67890]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCompleteCheckout -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.CheckoutTest@263f04ca]" started-at="2026-03-28T12:18:21 IST" name="tearDown" finished-at="2026-03-28T12:18:22 IST" duration-ms="220" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCompleteCheckout status=SUCCESS method=CheckoutTest.testCompleteCheckout(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:tests.CheckoutTest@263f04ca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CheckoutTest@263f04ca]" started-at="2026-03-28T12:18:22 IST" name="setUp" finished-at="2026-03-28T12:18:25 IST" duration-ms="3255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="loginAndAddProductsToCart()[pri:0, instance:tests.CheckoutTest@263f04ca]" started-at="2026-03-28T12:18:25 IST" name="loginAndAddProductsToCart" finished-at="2026-03-28T12:18:26 IST" duration-ms="1113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndAddProductsToCart -->
+        <test-method signature="testCompleteCheckout(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:tests.CheckoutTest@263f04ca]" started-at="2026-03-28T12:18:26 IST" name="testCompleteCheckout" description="Verify complete checkout flow" data-provider="checkoutData" finished-at="2026-03-28T12:18:28 IST" duration-ms="1476" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Alice]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Wonder]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[54321]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCompleteCheckout -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.CheckoutTest@263f04ca]" started-at="2026-03-28T12:18:28 IST" name="tearDown" finished-at="2026-03-28T12:18:28 IST" duration-ms="239" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCompleteCheckout status=SUCCESS method=CheckoutTest.testCompleteCheckout(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:tests.CheckoutTest@263f04ca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.CheckoutTest -->
+    </test> <!-- Smoke Tests -->
+  </suite> <!-- Smoke-Suite -->
+</testng-results>

@@ -85,8 +85,9 @@ public class DriverFactory {
                     "--disable-notifications",
                     "--disable-blink-features=AutomationControlled",
                     "--disable-save-password-bubble",
-                    "--disable-infobars",
-                    "--user-data-dir=/tmp/chrome-selenium"
+                    "--disable-infobars"
+//                        ,
+//                    "--user-data-dir=/tmp/chrome-selenium"
                     
                 );
                 log.info("Launching Chrome browser");

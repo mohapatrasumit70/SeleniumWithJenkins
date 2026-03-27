@@ -1,6 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         https://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
 
@@ -8,29 +9,35 @@
 	<artifactId>SumitFlameworkFromAi</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
+	<!-- ✅ All Versions Defined -->
 	<properties>
-		<maven.compiler.source>11</maven.compiler.source>
-		<maven.compiler.target>11</maven.compiler.target>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>21</maven.compiler.source>
+		<maven.compiler.target>21</maven.compiler.target>
+
 		<selenium.version>4.27.0</selenium.version>
 		<testng.version>7.9.0</testng.version>
-		<extentreports.version>5.1.1</extentreports.version>
 		<webdrivermanager.version>5.7.0</webdrivermanager.version>
+		<extentreports.version>5.1.1</extentreports.version>
 		<log4j.version>2.22.1</log4j.version>
 		<apache.poi.version>5.2.5</apache.poi.version>
 		<faker.version>1.0.2</faker.version>
 		<surefire.version>3.2.5</surefire.version>
+
+		<!-- Allure -->
+		<allure.testng.version>2.24.0</allure.testng.version>
+		<allure.maven.version>2.12.0</allure.maven.version>
 	</properties>
 
 	<dependencies>
-		<!-- Selenium WebDriver -->
+
+		<!-- Selenium -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>${selenium.version}</version>
 		</dependency>
 
-		<!-- WebDriverManager - Auto driver management -->
+		<!-- WebDriverManager -->
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
@@ -42,8 +49,8 @@
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>${testng.version}</version>
+			<scope>test</scope>
 		</dependency>
-
 
 		<!-- Extent Reports -->
 		<dependency>
@@ -52,7 +59,7 @@
 			<version>${extentreports.version}</version>
 		</dependency>
 
-		<!-- Log4j2 Logging -->
+		<!-- Log4j -->
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-api</artifactId>
@@ -64,44 +71,75 @@
 			<version>${log4j.version}</version>
 		</dependency>
 
-		<!-- Apache POI - Excel Data Driven -->
+		<!-- Apache POI -->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>
 			<version>${apache.poi.version}</version>
 		</dependency>
 
-		<!-- Java Faker - Test Data Generation -->
+		<!-- Faker -->
 		<dependency>
 			<groupId>com.github.javafaker</groupId>
 			<artifactId>javafaker</artifactId>
 			<version>${faker.version}</version>
 		</dependency>
 
-		<!-- AssertJ - Fluent Assertions -->
+		<!-- AssertJ -->
 		<dependency>
 			<groupId>org.assertj</groupId>
 			<artifactId>assertj-core</artifactId>
 			<version>3.25.3</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- ✅ Allure TestNG -->
+		<dependency>
+			<groupId>io.qameta.allure</groupId>
+			<artifactId>allure-testng</artifactId>
+			<version>${allure.testng.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.framework</groupId>
+			<artifactId>selenium-testng-framework</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.12.0</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.12.0</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.12.0</version>
+			<scope>compile</scope>
 		</dependency>
 	</dependencies>
-
 
 	<build>
 		<plugins>
 
-			<!-- Maven Compiler Plugin -->
+			<!-- Compiler -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.12.1</version>
 				<configuration>
-					<source>${java.version}</source>
-					<target>${java.version}</target>
+					<source>${maven.compiler.source}</source>
+					<target>${maven.compiler.target}</target>
 				</configuration>
 			</plugin>
 
-			<!-- Maven Surefire Plugin (TestNG execution) -->
+			<!-- TestNG Runner -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
@@ -111,48 +149,45 @@
 						<suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 					<systemPropertyVariables>
-						<!--                        <browser>${browser}</browser>-->
-						<!--                        <env>${env}</env>-->
+						<properties>
+							<browser>chrome</browser>
+							<env>qa</env>
+						</properties>
 					</systemPropertyVariables>
 				</configuration>
 			</plugin>
 
+			<!-- ✅ Allure Plugin FIXED -->
+			<plugin>
+				<groupId>io.qameta.allure</groupId>
+				<artifactId>allure-maven</artifactId>
+				<version>${allure.maven.version}</version>
+			</plugin>
 
+			<!-- Clean -->
 			<plugin>
 				<artifactId>maven-clean-plugin</artifactId>
 				<version>3.2.0</version>
-				<configuration>
-					<filesets>
-						<fileset>
-							<directory>screenshots</directory>
-							<includes>
-								<include>**/*</include>
-							</includes>
-						</fileset>
-						<fileset>
-							<directory>reports</directory>
-							<includes>
-								<include>**/*</include>
-							</includes>
-						</fileset>
-						<fileset>
-							<directory>logs</directory>
-							<includes>
-								<include>**/*.log</include>
-								<include>**/*.log.gz</include>
-							</includes>
-						</fileset>
-						<fileset>
-							<directory>test-output</directory>
-							<includes>
-								<include>**/*</include>
-							</includes>
-						</fileset>
-					</filesets>
-				</configuration>
 			</plugin>
 
 		</plugins>
 	</build>
+
+	<!-- Profiles -->
+	<profiles>
+		<profile>
+			<id>chrome</id>
+			<properties>
+				<browser>chrome</browser>
+			</properties>
+		</profile>
+
+		<profile>
+			<id>firefox</id>
+			<properties>
+				<browser>firefox</browser>
+			</properties>
+		</profile>
+	</profiles>
 
 </project>

@@ -1,0 +1,50 @@
+2026-03-28 12:17:53.389 [main] INFO  Base.BaseTest - ======= TEST SUITE STARTED =======
+2026-03-28 12:17:53.437 [main] INFO  config.ConfigReader - Configuration loaded from: src/test/resources/config.properties
+2026-03-28 12:17:53.850 [main] INFO  Listeners.ExtentReportListener - Extent Report initialized: src/main/resources/reports/TestReport.html
+2026-03-28 12:17:54.024 [main] INFO  Base.BaseTest - Setting up driver for browser: chrome
+2026-03-28 12:17:56.982 [main] INFO  Base.DriverFactory - Launching Chrome browser
+2026-03-28 12:18:00.070 [main] INFO  Base.DriverFactory - Driver initialized: chrome | Thread: 1
+2026-03-28 12:18:02.347 [main] INFO  Base.BaseTest - Navigated to: https://www.saucedemo.com
+2026-03-28 12:18:02.678 [main] INFO  Listeners.ExtentReportListener - >>> TEST STARTED: testValidLogin
+2026-03-28 12:18:04.262 [main] INFO  Base.BaseTest - Valid login test PASSED
+2026-03-28 12:18:04.301 [main] INFO  Listeners.ExtentReportListener - >>> TEST PASSED: testValidLogin
+2026-03-28 12:18:04.310 [main] INFO  Base.BaseTest - TEST PASSED: testValidLogin
+2026-03-28 12:18:04.551 [main] INFO  Base.DriverFactory - Driver quit and removed from ThreadLocal | Thread: 1
+2026-03-28 12:18:04.558 [main] INFO  Base.BaseTest - Setting up driver for browser: chrome
+2026-03-28 12:18:04.648 [main] INFO  Base.DriverFactory - Launching Chrome browser
+2026-03-28 12:18:05.917 [main] INFO  Base.DriverFactory - Driver initialized: chrome | Thread: 1
+2026-03-28 12:18:07.620 [main] INFO  Base.BaseTest - Navigated to: https://www.saucedemo.com
+2026-03-28 12:18:07.624 [main] INFO  Listeners.ExtentReportListener - >>> TEST STARTED: testLogout
+2026-03-28 12:18:09.319 [main] INFO  Listeners.ExtentReportListener - >>> TEST PASSED: testLogout
+2026-03-28 12:18:09.321 [main] INFO  Base.BaseTest - TEST PASSED: testLogout
+2026-03-28 12:18:09.519 [main] INFO  Base.DriverFactory - Driver quit and removed from ThreadLocal | Thread: 1
+2026-03-28 12:18:09.542 [main] INFO  Base.BaseTest - Setting up driver for browser: chrome
+2026-03-28 12:18:09.622 [main] INFO  Base.DriverFactory - Launching Chrome browser
+2026-03-28 12:18:11.096 [main] INFO  Base.DriverFactory - Driver initialized: chrome | Thread: 1
+2026-03-28 12:18:13.203 [main] INFO  Base.BaseTest - Navigated to: https://www.saucedemo.com
+2026-03-28 12:18:14.454 [main] INFO  Listeners.ExtentReportListener - >>> TEST STARTED: testCompleteCheckout
+2026-03-28 12:18:16.016 [main] INFO  Base.BaseTest - Checkout completed for: John Doe 12345
+2026-03-28 12:18:16.029 [main] INFO  Listeners.ExtentReportListener - >>> TEST PASSED: testCompleteCheckout
+2026-03-28 12:18:16.034 [main] INFO  Base.BaseTest - TEST PASSED: testCompleteCheckout
+2026-03-28 12:18:16.220 [main] INFO  Base.DriverFactory - Driver quit and removed from ThreadLocal | Thread: 1
+2026-03-28 12:18:16.225 [main] INFO  Base.BaseTest - Setting up driver for browser: chrome
+2026-03-28 12:18:16.283 [main] INFO  Base.DriverFactory - Launching Chrome browser
+2026-03-28 12:18:17.512 [main] INFO  Base.DriverFactory - Driver initialized: chrome | Thread: 1
+2026-03-28 12:18:19.135 [main] INFO  Base.BaseTest - Navigated to: https://www.saucedemo.com
+2026-03-28 12:18:20.324 [main] INFO  Listeners.ExtentReportListener - >>> TEST STARTED: testCompleteCheckout
+2026-03-28 12:18:21.866 [main] INFO  Base.BaseTest - Checkout completed for: Jane Smith 67890
+2026-03-28 12:18:21.906 [main] INFO  Listeners.ExtentReportListener - >>> TEST PASSED: testCompleteCheckout
+2026-03-28 12:18:21.911 [main] INFO  Base.BaseTest - TEST PASSED: testCompleteCheckout
+2026-03-28 12:18:22.128 [main] INFO  Base.DriverFactory - Driver quit and removed from ThreadLocal | Thread: 1
+2026-03-28 12:18:22.168 [main] INFO  Base.BaseTest - Setting up driver for browser: chrome
+2026-03-28 12:18:22.229 [main] INFO  Base.DriverFactory - Launching Chrome browser
+2026-03-28 12:18:23.586 [main] INFO  Base.DriverFactory - Driver initialized: chrome | Thread: 1
+2026-03-28 12:18:25.422 [main] INFO  Base.BaseTest - Navigated to: https://www.saucedemo.com
+2026-03-28 12:18:26.540 [main] INFO  Listeners.ExtentReportListener - >>> TEST STARTED: testCompleteCheckout
+2026-03-28 12:18:28.016 [main] INFO  Base.BaseTest - Checkout completed for: Alice Wonder 54321
+2026-03-28 12:18:28.021 [main] INFO  Listeners.ExtentReportListener - >>> TEST PASSED: testCompleteCheckout
+2026-03-28 12:18:28.023 [main] INFO  Base.BaseTest - TEST PASSED: testCompleteCheckout
+2026-03-28 12:18:28.260 [main] INFO  Base.DriverFactory - Driver quit and removed from ThreadLocal | Thread: 1
+2026-03-28 12:18:28.342 [main] INFO  Listeners.ExtentReportListener - Suite Finished | Pass: 5 | Fail: 0 | Skip: 0
+2026-03-28 12:18:29.332 [main] INFO  Listeners.ExtentReportListener - Extent Report flushed successfully
+2026-03-28 12:18:29.332 [main] INFO  Base.BaseTest - ======= TEST SUITE COMPLETED =======

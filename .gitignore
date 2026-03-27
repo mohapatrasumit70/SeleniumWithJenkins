@@ -1,29 +1,47 @@
-/target/
+# --- Credentials & Secrets (CRITICAL) ---
+# Add any file where you store your logins/passwords
+.env
+credentials.properties
+secrets.json
+*.pem
+*.key
 
-# ===== REPORTS =====
-reports/
-test-output/
-extent-reports/
-ExtentReports/
-*.html
-
-# ===== SCREENSHOTS =====
-screenshots/
-*.png
-*.jpg
-*.jpeg
-
-# ===== MAVEN =====
+# --- Java & Build Tools ---
 target/
+bin/
+*.class
+*.war
+*.ear
+*.jar
 
-# ===== IDE =====
+# --- Maven ---
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.nextSnapshot
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# --- IDE Settings (IntelliJ / Eclipse / VS Code) ---
 .idea/
-.eclipse/
 *.iml
-.settings/
-.classpath
+*.iws
 .project
+.classpath
+.settings/
+.factorypath
+.vscode/
 
-# ===== LOGS =====
+# --- Test Reports & Logs ---
+test-output/
+surefire-reports/
 logs/
 *.log
+test-reports/
+ExtentReports/
+
+# --- OS Generated Files ---
+.DS_Store
+Thumbs.db
